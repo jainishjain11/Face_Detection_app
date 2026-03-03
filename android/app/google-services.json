@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295680754005",
+    "project_id": "facedetectionapp-f2016",
+    "storage_bucket": "facedetectionapp-f2016.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295680754005:android:bf1aff2a8cc9e2c3daafdc",
+        "android_client_info": {
+          "package_name": "com.jainish.face_detection_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIm0ThgjtpdzfZYNzeRA_3WIiKaJfiRjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
