@@ -18,7 +18,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   Future<void> _logout() async {
     setState(() => _isLoading = true);
-    await _authService.signOut();
+    await _authService.logout();
     if (!mounted) return;
     Navigator.of(context).pushReplacementNamed('/login');
   }
