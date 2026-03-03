@@ -1,10 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
+import 'screens/dashboard_screen.dart';
 import 'screens/camera_screen.dart';
 import 'screens/profile_screen.dart';
 import 'utils/constants.dart';
@@ -23,19 +25,27 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const FaceDetectionApp());
+  runApp(const FaceAIProApp());
 }
 
-class FaceDetectionApp extends StatelessWidget {
-  const FaceDetectionApp({super.key});
+class FaceAIProApp extends StatelessWidget {
+  const FaceAIProApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppStrings.appName,
+      title: 'FaceAI Pro',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+      theme: AppTheme.darkTheme.copyWith(
+        textTheme: GoogleFonts.poppinsTextTheme(
+          AppTheme.darkTheme.textTheme,
+        ),
+      ),
+      darkTheme: AppTheme.darkTheme.copyWith(
+        textTheme: GoogleFonts.poppinsTextTheme(
+          AppTheme.darkTheme.textTheme,
+        ),
+      ),
       themeMode: ThemeMode.dark,
       initialRoute: '/',
       routes: {
@@ -43,6 +53,7 @@ class FaceDetectionApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
         '/signup': (context) => const RegisterScreen(),
+        '/dashboard': (context) => const DashboardScreen(),
         '/camera': (context) => const CameraScreen(),
         '/profile': (context) => const ProfileScreen(),
       },

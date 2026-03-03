@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen>
       );
 
       if (!mounted) return;
-      Navigator.of(context).pushReplacementNamed('/camera');
+      Navigator.of(context).pushReplacementNamed('/dashboard');
     } catch (e) {
       setState(() => _errorMessage = e.toString().replaceAll('Exception: ', ''));
     } finally {
