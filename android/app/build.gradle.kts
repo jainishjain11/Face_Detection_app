@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId = "com.jainish.face_detection_app"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
