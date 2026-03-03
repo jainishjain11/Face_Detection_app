@@ -5,7 +5,6 @@ import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
-import 'screens/otp_verify_screen.dart';
 import 'screens/camera_screen.dart';
 import 'screens/profile_screen.dart';
 import 'utils/constants.dart';
@@ -43,7 +42,7 @@ class FaceDetectionApp extends StatelessWidget {
         '/': (context) => const SplashScreen(),
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
-        '/otp': (context) => const OtpVerifyScreen(),
+        '/signup': (context) => const RegisterScreen(),
         '/camera': (context) => const CameraScreen(),
         '/profile': (context) => const ProfileScreen(),
       },

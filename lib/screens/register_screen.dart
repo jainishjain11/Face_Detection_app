@@ -72,17 +72,13 @@ class _RegisterScreenState extends State<RegisterScreen>
     });
 
     try {
-      await _authService.registerWithEmail(
+      await _authService.signUp(
         _emailController.text,
         _passwordController.text,
-        _nameController.text,
       );
 
       if (!mounted) return;
-      Navigator.of(context).pushReplacementNamed(
-        '/otp',
-        arguments: {'email': _emailController.text.trim()},
-      );
+      Navigator.of(context).pushReplacementNamed('/camera');
     } catch (e) {
       setState(
           () => _errorMessage = e.toString().replaceAll('Exception: ', ''));

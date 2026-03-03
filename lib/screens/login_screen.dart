@@ -59,26 +59,13 @@ class _LoginScreenState extends State<LoginScreen>
     });
 
     try {
-      final credential = await _authService.loginWithEmail(
+      await _authService.login(
         _emailController.text,
         _passwordController.text,
       );
 
       if (!mounted) return;
-
-      // Check email verification
-      final isVerified =
-          await _authService.isEmailVerified(credential.user!.uid);
-      if (!mounted) return;
-
-      if (isVerified) {
-        Navigator.of(context).pushReplacementNamed('/camera');
-      } else {
-        Navigator.of(context).pushReplacementNamed(
-          '/otp',
-          arguments: {'email': _emailController.text.trim()},
-        );
-      }
+      Navigator.of(context).pushReplacementNamed('/camera');
     } catch (e) {
       setState(() => _errorMessage = e.toString().replaceAll('Exception: ', ''));
     } finally {

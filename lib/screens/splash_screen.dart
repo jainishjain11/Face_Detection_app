@@ -61,16 +61,7 @@ class _SplashScreenState extends State<SplashScreen>
     final user = authService.currentUser;
 
     if (user != null) {
-      final isVerified = await authService.isEmailVerified(user.uid);
-      if (!mounted) return;
-      if (isVerified) {
-        Navigator.of(context).pushReplacementNamed('/camera');
-      } else {
-        Navigator.of(context).pushReplacementNamed(
-          '/otp',
-          arguments: {'email': user.email ?? ''},
-        );
-      }
+      Navigator.of(context).pushReplacementNamed('/camera');
     } else {
       Navigator.of(context).pushReplacementNamed('/login');
     }
