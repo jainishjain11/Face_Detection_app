@@ -29,37 +29,6 @@
 
 ---
 
-## 📱 Screenshots
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center">
-<img src="screenshots/dashboard.png" width="300"/><br/>
-<b>Dashboard</b>
-</td>
-<td align="center">
-<img src="screenshots/camera.png" width="300"/><br/>
-<b>Live Detection</b>
-</td>
-</tr>
-
-<tr>
-<td align="center">
-<img src="screenshots/login.png" width="300"/><br/>
-<b>Secure Auth</b>
-</td>
-<td align="center">
-<img src="screenshots/history.png" width="300"/><br/>
-<b>Session History</b>
-</td>
-</tr>
-</table>
-
-</div>
-
----
 
 ## 🚀 Get Started
 
@@ -163,13 +132,6 @@ v1.1 → Face Recognition
 v1.2 → iOS Support  
 v2.0 → Play Store Launch
 ```
-
----
-
-## 📄 License
-
-MIT License  
-Copyright (c) 2026 JAINISH JAIN
 
 ---
 
