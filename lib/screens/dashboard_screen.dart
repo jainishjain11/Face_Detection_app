@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../services/auth_service.dart';
 import '../services/firestore_service.dart';
+import 'session_history_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -185,18 +186,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   curve: Curves.easeOut,
                                 ),
                           ),
-                          const SizedBox(width: 14),
-                          Expanded(
-                            child: _StatCard(
-                              title: 'ML Engine',
-                              value: 'ML Kit',
-                              icon: Icons.psychology_outlined,
-                              color: const Color(0xFF7C4DFF),
-                            ).animate(delay: 100.ms).fadeIn(duration: 500.ms).slideX(
-                                  begin: 0.2,
-                                  curve: Curves.easeOut,
-                                ),
-                          ),
                         ],
                       );
                     },
@@ -238,17 +227,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           title: 'Session\nHistory',
                           icon: Icons.history_rounded,
                           color: const Color(0xFF00BFA5),
-                          onTap: () {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: const Text('History coming soon!'),
-                                backgroundColor: const Color(0xFF1E1E2E),
-                                behavior: SnackBarBehavior.floating,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(12)),
-                              ),
-                            );
-                          },
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const SessionHistoryScreen(),
+                            ),
+                          ),
                         ),
                       ),
                       const SizedBox(width: 14),

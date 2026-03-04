@@ -9,6 +9,7 @@ import 'screens/register_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/camera_screen.dart';
 import 'screens/profile_screen.dart';
+import 'screens/session_history_screen.dart';
 import 'utils/constants.dart';
 
 Future<void> main() async {
@@ -56,6 +57,7 @@ class FaceAIProApp extends StatelessWidget {
         '/dashboard': (context) => const DashboardScreen(),
         '/camera': (context) => const CameraScreen(),
         '/profile': (context) => const ProfileScreen(),
+        '/session-history': (context) => const SessionHistoryScreen(),
       },
     );
   }
