@@ -1,85 +1,180 @@
 <div align="center">
-Real-time AI Face Detection - Google ML Kit - Production Ready
 
-[
-[
-[
-[
+# 🚀 FaceAI Pro
+
+<img src="screenshots/banner.png" width="100%" />
+
+### Real-time Face Detection App  
+*Powered by Google ML Kit*
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)
+![ML Kit](https://img.shields.io/badge/Google%20ML%20Kit-Face%20Detection-orange.svg)
+![License](https://img.shields.io/github/license/YOUR_USERNAME/FaceAI-Pro.svg)
+![APK](https://img.shields.io/badge/Download-APK-brightgreen.svg)
 
 </div>
-✨ Features
-Feature	Status
-🔍 Live Face Detection	✅ 30+ FPS, green bounding boxes
-🔐 Firebase Auth	✅ Email/password login
-📊 Modern Dashboard	✅ Material 3, animations
-📈 Session History	✅ Firestore tracking
-🎨 Pro UI/UX	✅ Poppins, Lottie, gradients
-📱 Android APK	✅ 90MB production build
-🎮 Live Demo
-<div align="center"> <table> <tr> <td><img src="screenshots/dashboard.png" width="300"/></td> <td><img src="screenshots/camera.png" width="300"/></td> </tr> <tr> <td><b>Dashboard</b></td> <td><b>Real-time Detection</b></td> </tr> </table> </div>
-📱 Install APK (1 Minute)
-bash
-# 1. Download APK (90MB)
-curl -L -o FaceAI_Pro.apk build/app/outputs/flutter-apk/app-release.apk
 
-# 2. Android: Settings → Security → Unknown Sources → ✓ Chrome
-# 3. Tap APK → Install → Open → Scan faces!
-Direct APK: FaceAI_Pro_v1.0.0.apk
+---
 
-🛠 Tech Stack
-text
-├── Flutter (Material 3)
-├── Google ML Kit (Face Detection)
-├── Firebase (Auth + Firestore)
-├── Camera (Live Stream)
-├── flutter_animate (Smooth UX)
-├── Lottie (Animations)
-└── Poppins (Typography)
-🚀 Quick Start (Dev)
-bash
-# Clone & Run
+## ✨ Features
+
+<div align="center">
+
+| LIVE CAMERA | FACE BOXES | DASHBOARD | HISTORY |
+|-------------|------------|-----------|---------|
+| ✅ Real-time | ✅ Green overlay | ✅ Modern UI | ✅ Session logs |
+| 30+ FPS | ✅ On-device AI | ✅ Stats | ✅ Firestore |
+
+</div>
+
+---
+
+## 📱 Screenshots
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img src="screenshots/dashboard.png" width="300"/><br/>
+<b>Dashboard</b>
+</td>
+<td align="center">
+<img src="screenshots/camera.png" width="300"/><br/>
+<b>Live Detection</b>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="screenshots/login.png" width="300"/><br/>
+<b>Secure Auth</b>
+</td>
+<td align="center">
+<img src="screenshots/history.png" width="300"/><br/>
+<b>Session History</b>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 🚀 Get Started
+
+### 📥 Download APK (90MB)
+
+```
+https://github.com/YOUR_USERNAME/FaceAI-Pro/raw/main/build/app/outputs/flutter-apk/app-release.apk
+```
+
+---
+
+### 📱 Install (Android)
+
+1. Download APK  
+2. Go to **Settings → Security → Unknown Sources → Enable (Chrome)**  
+3. Tap APK → Install → Open  
+4. Login → Start Scanning 🎉  
+
+---
+
+### 💻 Run from Source
+
+```bash
 git clone https://github.com/YOUR_USERNAME/FaceAI-Pro.git
 cd FaceAI-Pro
 flutter pub get
 flutter run
-📊 Production Stats
-text
-🎯 Detection: 98% accuracy
-⚡ Performance: 30+ FPS (mid-range)
-📦 Size: 90MB (optimized)
-🧑‍💻 Target: Android 8.0+
-🌍 Firebase: Spark Plan (FREE)
-🎯 Use Cases
-🔐 Security - Face gate unlock
+```
 
-👨‍💼 Attendance - Employee check-in
+---
 
-🏥 Healthcare - Patient ID
+## 🛠 Tech Stack
 
-📸 Photography - Auto portrait mode
+```
+├── Flutter (Material 3)
+├── Google ML Kit – Face Detection
+├── Firebase Auth + Firestore
+├── Camera (Live Stream)
+├── flutter_animate
+└── Google Fonts (Poppins)
+```
 
-🎮 Games - AR face filters
+---
 
-📈 Roadmap
-text
-graph TD
-  A[FaceAI Pro v1.0] --> B[v1.1 Face Recognition]
-  A --> C[v1.2 Liveness Detection]
-  A --> D[v1.3 iOS Support]
-  B --> E[v2.0 Pro Tier]
-🤝 Contributing
-Fork repo
+## 📊 Performance
 
-git checkout -b feature/face-recognition
+```
+⚡ Detection Speed: 30+ FPS
+🎯 Accuracy: 98%
+📦 APK Size: 90MB
+📱 Android 8.0+
+🔋 On-device AI (No Internet Required)
+```
 
-git commit -m "Add face recognition"
+---
 
-Push + PR
+## 🎯 Perfect For
+
+- 🔐 Security Apps  
+- 👨‍💼 Attendance Systems  
+- 📸 Photo Apps  
+- 🎮 AR Filters  
+- 🏥 Patient Verification  
+
+---
+
+## 🔄 App Flow
+
+```
+Login → Dashboard → Scan → Green Face Boxes → History
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+lib/
+├── screens/     # UI (Dashboard, Camera, Login)
+├── services/    # Firebase + ML Kit  
+└── main.dart    # Entry point
+```
+
+---
+
+## 🎉 What's Working
+
+- ✅ Live face detection (green boxes)
+- ✅ Email/password authentication
+- ✅ Modern dark dashboard
+- ✅ Session history screen
+- ✅ Smooth animations
+- ✅ Production APK ready
+
+---
+
+## 🚧 Roadmap
+
+```
+v1.1 → Face Recognition
+v1.2 → iOS Support  
+v2.0 → Play Store Launch
+```
+
+---
+
+## 📄 License
+
+MIT License  
+Copyright (c) 2026 JAINISH JAIN
+
+---
 
 <div align="center">
-Built with ❤️ for biotech researchers & ML enthusiasts
 
-[
-[
+### Made with Flutter ❤️
 
 </div>
