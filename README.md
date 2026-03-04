@@ -35,7 +35,7 @@
 ### 📥 Download APK (90MB)
 
 ```
-https://github.com/YOUR_USERNAME/FaceAI-Pro/raw/main/build/app/outputs/flutter-apk/app-release.apk
+https://github.com/jainishjain11/Face_Detection_app/raw/main/build/app/outputs/flutter-apk/app-release.apk
 ```
 
 ---
@@ -52,7 +52,7 @@ https://github.com/YOUR_USERNAME/FaceAI-Pro/raw/main/build/app/outputs/flutter-a
 ### 💻 Run from Source
 
 ```bash
-git clone (https://github.com/jainishjain11/Face_Detection_app)
+git clone https://github.com/jainishjain11/Face_Detection_app
 cd FaceAI-Pro
 flutter pub get
 flutter run
